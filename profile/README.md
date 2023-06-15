@@ -37,6 +37,8 @@ We have made a RestAPI server for our Skincheck.AI app using NestJS for our main
 
 The backend of for cloud computing is implemented using Google Cloud Platform. We use Cloud Run, Cloud Build, Google Cloud Storage, Google Cloud SQL, Google Cloud Pub/Sub, and Firebase Authentication.
 
+**API Documentation :** https://documenter.getpostman.com/view/27702577/2s93sgXB56
+
 **Cloud Architecture**
 
 ![Cloud Architecture](/profile/resource/cloud_architecture.png)
