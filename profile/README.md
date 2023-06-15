@@ -1,17 +1,58 @@
-## Hi there 👋
+# SkinCheck.AI
 
-# SkinCheck.AI | An All-in-One Platform For Your Skincare Needs. 
+SkinCheck.AI is an All-in-One Platform For Your Skincare Needs. This project was inspired by the fact that many teenagers in Indonesia have acne problems and limited access to information on how to solve their skin problems. We took the initiative to create a mobile app that can help any individual find out the condition of their facial skin and how to treat it. We plan to create an innovative way to find out the condition of faces, find the appropriate skin care products and the best way to handle them. We are using machine learning, cloud computing and mobile development to realise these products.
 
+# Current Features
+
+This was the early features that this applications have.
+
+1. Authentication
+
+   <img src="./resource/authentication.png" height="500">
+
+2. Browse for skincare products and tips
+
+   <img src="./resource/Home%20Skin%20Page.png" height="500">
+
+3. Get skin condition prediction
+
+   <img src="./resource/Detail%20Skin%20Page-1.png" height="500">
+
+4. Get skincare recommendation
+
+   <img src="./resource/Detail%20Skin%20Page.png" height="500">
+
+# Technical Details
 
 ## SkinCheck.AI Android Applications
 
-
 ## SkinCheck.AI Cloud Computing Platform
 
+The backend of for cloud computing is implemented using Google Cloud Platform. We use Cloud Run, Cloud Build, Google Cloud Storage, Google Cloud SQL, Google Cloud Pub/Sub, and Firebase Authentication.
+
+**Cloud Architecture**
+
+![Cloud Architecture](./resource/cloud_architecture.png)
+
+**List Repostory for Cloud Computing**
+
+#### 1. [Api-Design-Specification](www.google.com) (Filled with API design using OAS 3.0)
+
+We implemented this the initial API design for our projects using OAS 3.0
+
+#### 2. [skincheckai-api](https://github.com/Capstone-Project-C23-PR485/skincheckai-api) (main backend API)
+
+Implemented using NestJS Framework and Prisma ORM.
+
+#### 3. Machine learning backend
+
+There is three machine learning backend used in this project. Each of them is for their own models. The backend is implemented using FastAPI.
+
+- [Cloud-Acne-Detection-Service](https://github.com/Capstone-Project-C23-PR485/Cloud-Acne-Detection-Service)
+- [Cloud-Wrinkle-Detection-Service](https://github.com/Capstone-Project-C23-PR485/Cloud-Wrinkle-Detection-Service)
+- [Cloud-Flek-Detection-Service](https://github.com/Capstone-Project-C23-PR485/Cloud-Flek-Detection-Service)
 
 ## SkinCheck.AI Machine Learning Platform
-
-Skin Condition Prediction and Skincare Recommendation
 
 This repository contains the implementation of three machine learning models for predicting
 different skin conditions, namely acne type, wrinkle detection, and flake detection. We
@@ -58,23 +99,50 @@ factors such as skin type, concerns, and ingredient preferences, the system sugg
 skincare products that align with the user's requirements. This can simplify the process of
 finding and selecting effective skincare products tailored to individual needs.
 
-### Getting Started (for ML)
+## Getting Started
+
+### Mobile Development
+
+To get started with the mobile development, you can start by installing Android Studio. Then cloning this [repository](https://github.com/Capstone-Project-C23-PR485/Mobile-Development.git) to your local machine.
+
+### Cloud Computing
+
+To get started to deploy the server, you need a way to deploy the applications. We defaulted to use Google Cloud Platform to deploy our server. We utilize Cloud Run, Cloud Build, Google Cloud Storage, Google Cloud SQL, Google Cloud Pub/Sub, and Firebase Authentication. The step to use is below:
+
+1. Create a GCP Projects
+2. Create Firebase Project and activate Firebase Authentication
+3. Create a Cloud SQL Instance
+4. Create a Cloud Storage Bucket
+5. Clone, build, and deploy the code in this repository to cloud run
+   - https://github.com/Capstone-Project-C23-PR485/skincheckai-api.git
+6. Set up Pub/Sub topic
+7. Clone, build, and deploy the machine-learning backend to Cloud Run
+   - Acne : https://github.com/Capstone-Project-C23-PR485/Cloud-Acne-Detection-Service.git
+   - Flek : https://github.com/Capstone-Project-C23-PR485/Cloud-Flek-Detection-Service.git
+   - Wrinkle : https://github.com/Capstone-Project-C23-PR485/Cloud-Wrinkle-Detection-Service.git
+8. Set up Pub/Sub subscription for each machine-learning backend
+9. Update all environtment variable in the Cloud Run service
+
+####
+
+### Machine Learning
 
 To get started with the skin condition prediction models and skincare recommendation system,
 please follow the instructions below:
-1. Clone this repository: 
-    a) Acne:https://github.com/Capstone-Project-C23-PR485/Machine-Learning-Acne-TypeClassification.git
-    b) Wrinkle:https://github.com/Capstone-Project-C23-PR485/-Machine-Learning-WrinkleType-Classification.git
-    c) Flex:https://github.com/Capstone-Project-C23-PR485/Machine-Learning-Flex-TypeClassification.git
-    d) Product Recommendation:https://github.com/Capstone-Project-C23-PR485/ProductRecommendation-.git
+
+1. Clone this repository:
+   - Acne:https://github.com/Capstone-Project-C23-PR485/Machine-Learning-Acne-TypeClassification.git
+   - Wrinkle:https://github.com/Capstone-Project-C23-PR485/-Machine-Learning-WrinkleType-Classification.git
+   - Flex:https://github.com/Capstone-Project-C23-PR485/Machine-Learning-Flex-TypeClassification.git
+   - Product Recommendation:https://github.com/Capstone-Project-C23-PR485/ProductRecommendation-.git
 2. Install the required dependencies:
-    a) pip install python
-    b) pip install keras
-    c) pip install tensorflow
+   - pip install python
+   - pip install keras
+   - pip install tensorflow
 3. Download the trained models and preprocessed datasets from the following links:
-    a) Acne Type Prediction Model : https://drive.google.com/file/d/19y_LSalTBaCA8pk_Y0pa9RqldsEVj_Bz/view?usp=share_link
-    b) Wrinkle Detection Model : https://drive.google.com/drive/folders/1Frk77G06bEWpdYkd7WNJ9tgl43ZkSeuS?us p=sharing
-    c) Flake Detection Model : https://drive.google.com/file/d/18U8fijJX2el8s1GtWN_ngr58swDyYOzm/view?usp=sh aring
+   - Acne Type Prediction Model : https://drive.google.com/file/d/19y_LSalTBaCA8pk_Y0pa9RqldsEVj_Bz/view?usp=share_link
+   - Wrinkle Detection Model : https://drive.google.com/drive/folders/1Frk77G06bEWpdYkd7WNJ9tgl43ZkSeuS?us p=sharing
+   - Flake Detection Model : https://drive.google.com/file/d/18U8fijJX2el8s1GtWN_ngr58swDyYOzm/view?usp=sh aring
 4. Place the downloaded models in the appropriate directories.
 5. Explore the Jupyter notebooks provided in the repository to understand how to use the models and generate skincare recommendations.
 6. Follow the instructions within the notebooks to load the models, preprocess the data, and make predictions or generate skincare recommendations.
@@ -86,6 +154,7 @@ base model. Fine-tuning starts from the 100th layer onwards. Layers before the 1
 are frozen, while layers after the 100th layer are trainable.
 
 ### Custom Layers
+
 Custom layers are added on top of the base model to adapt it for the specific task. The added layers include:
 
 1. Global Average Pooling
