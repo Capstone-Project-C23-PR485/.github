@@ -110,7 +110,7 @@ factors such as skin type, concerns, and ingredient preferences, the system sugg
 skincare products that align with the user's requirements. This can simplify the process of
 finding and selecting effective skincare products tailored to individual needs.
 
-## Getting Started
+# Getting Started
 
 ### Mobile Development
 
