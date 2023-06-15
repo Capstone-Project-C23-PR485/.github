@@ -26,13 +26,24 @@ This was the early features that this applications have.
 
 ## SkinCheck.AI Android Applications
 
+The mobile application is made starting with UI/UX designs and a little UX research, then implementing the design results using native Kotlin Android by utilizing supporting libraries such as Retrofit to interact with APIs, ViewModel to maintain stable live data, and Firebase Google Authentication to process user authentication.
+
+**Flow Android**
+![Flow Android](/profile/resource/flow_aplikasi_android.png)
+
 ## SkinCheck.AI Cloud Computing Platform
+
+We have made a RestAPI server for our Skincheck.AI app using NestJS for our main server and FastAPI for machine learning model deployment. We deploy our backend services using Cloud Run, with the CI/CD pipeline using Cloud Build. We also utilize Google Cloud Storage for file storage, Google Cloud Pub/Sub for integrating our backend service, and Cloud SQL for our database server. We also successfully use cloud logging to debug our application.
 
 The backend of for cloud computing is implemented using Google Cloud Platform. We use Cloud Run, Cloud Build, Google Cloud Storage, Google Cloud SQL, Google Cloud Pub/Sub, and Firebase Authentication.
 
 **Cloud Architecture**
 
 ![Cloud Architecture](/profile/resource/cloud_architecture.png)
+
+**Database Structure**
+
+![Database Structure](/profile/resource/database_structure.png)
 
 **List Repostory for Cloud Computing**
 
