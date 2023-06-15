@@ -8,19 +8,19 @@ This was the early features that this applications have.
 
 1. Authentication
 
-   <img src="./resource/authentication.png" height="500">
+   <img src="/profile/resource/authentication.png" height="500">
 
 2. Browse for skincare products and tips
 
-   <img src="./resource/Home%20Skin%20Page.png" height="500">
+   <img src="/profile/resource/Home%20Skin%20Page.png" height="500">
 
 3. Get skin condition prediction
 
-   <img src="./resource/Detail%20Skin%20Page-1.png" height="500">
+   <img src="/profile/resource/Detail%20Skin%20Page-1.png" height="500">
 
 4. Get skincare recommendation
 
-   <img src="./resource/Detail%20Skin%20Page.png" height="500">
+   <img src="/profile/resource/Detail%20Skin%20Page.png" height="500">
 
 # Technical Details
 
@@ -32,7 +32,7 @@ The backend of for cloud computing is implemented using Google Cloud Platform. W
 
 **Cloud Architecture**
 
-![Cloud Architecture](./resource/cloud_architecture.png)
+![Cloud Architecture](/profile/resource/cloud_architecture.png)
 
 **List Repostory for Cloud Computing**
 
