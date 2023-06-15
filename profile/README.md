@@ -65,6 +65,8 @@ There is three machine learning backend used in this project. Each of them is fo
 - [Cloud-Wrinkle-Detection-Service](https://github.com/Capstone-Project-C23-PR485/Cloud-Wrinkle-Detection-Service)
 - [Cloud-Flek-Detection-Service](https://github.com/Capstone-Project-C23-PR485/Cloud-Flek-Detection-Service)
 
+We also create some simple UI to get firebase-auth token for development purposes, it was a forked project. This was the url : https://firebase-auth-ui-b6zefxgbfa-as.a.run.app/
+
 ## SkinCheck.AI Machine Learning Platform
 
 This repository contains the implementation of three machine learning models for predicting
